@@ -37,14 +37,15 @@ $conn->close();
     <title>Delete a Book</title>
 </head>
 <body>
-
+<div class="container">
 <form action="delete.php" method="post">
     <label for="title">Book Title:</label>
     <input type="text" id="title" name="title" required><br><br>
-
+<div class="button-group">
     <input type="submit" value="Delete Book">
+</div>
 </form>
-
+</div>
 </body>
 </html>
 

@@ -36,17 +36,23 @@ $conn->close();
 <html>
 <head>
     <title>Add a New Book</title>
+    <link rel="stylesheet" type="text/css" href="./myStyle.css">
 </head>
 <body>
-
+<div class="button-group">
+    <button type="button" onclick="location.href='form.html'">Back To Form</button>
+</div>
+<div class="container">
 <form action="add.php" method="post">
     <label for="title">Book Title:</label>
     <input type="text" id="title" name="title" required><br><br>
 
     <label for="author">Author:</label>
     <input type="text" id="author" name="author" required><br><br>
-
-    <input type="submit" value="Add Book">
+<div class="button-group">
+    <button type="submit">Submit</button>
+</div>
+</div>
 </form>
 
 </body>
