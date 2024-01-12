@@ -2,9 +2,19 @@
 <html>
 <head>
     <title>Database Data</title>
+    <link rel="stylesheet" type="text/css" href="./myStyle.css">
 </head>
-<body>
 
+<body>
+<head>
+<title>My Database</title>
+</head>
+<div class="button-group">
+    <button type="button" onclick="location.href='add.php'">Add</button>
+    <button type="button" onclick="location.href='delete.php'">Remove</button>
+</div>
+<div class="container">
+<h1>Below is our selection</h1>
 <?php
 
 $servername = "localhost";
@@ -31,7 +41,7 @@ if ($result->num_rows > 0) {
 $conn->close();
 
 ?>
-
+</div>
 </body>
 </html>
 
